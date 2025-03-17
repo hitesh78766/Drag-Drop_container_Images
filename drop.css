@@ -1,0 +1,61 @@
+/* Global Styling */
+body {
+    background-color: #121212 !important; /* Dark Theme */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1f1f1f !important;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.navbar-brand {
+    color: #ff9800 !important;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Row Spacing */
+.row {
+    gap: 15px;
+}
+
+/* Column Styling */
+.col {
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.col:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Image Styling */
+.images {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+/* Highlight Drop Area */
+.droppable.drag-over {
+    border: 4px dashed #ffeb3b;
+    box-shadow: 0px 0px 20px rgba(255, 235, 59, 0.8);
+}
+
+
+.edit-btn
+{
+    right: 30px;
+    top: 15px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 3px;
+}
+
+
