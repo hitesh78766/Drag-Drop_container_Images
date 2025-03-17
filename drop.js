@@ -104,22 +104,41 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // open the prompt box to set the width of the container 
-    const editBtns = document.querySelectorAll(".edit-btn");
 
-    editBtns.forEach((btn,index) =>{
-        btn.addEventListener("click" , () =>{
+    dropAreas.forEach((btn,index) =>{
+        btn.addEventListener("dblclick" , () =>{
             const userInput = prompt("Please enter the numbrer to set the width of the container")
-            const columnSize = parseInt(userInput)
-            console.log("the column size is : ",columnSize)
+            const columnSize = parseInt(userInput);
+            // console.log("the column size is : " , columnSize)
 
             if(!isNaN(columnSize) && columnSize >= 1 && columnSize <= 12){
-                let newSize = `col-${columnSize}`;
+                let newSize = `col-${columnSize}`
                 dropAreas[index].classList = `${newSize} p-0 bg-primary droppable position-relative`
             }else{
-                alert("You did not enter the number to set the width of the container")
+                alert("you did not enter the number to set the width of the container")
             }
+
         })
     })
+
+
+
+    // const editBtns = document.querySelectorAll(".edit-btn");
+
+    // editBtns.forEach((btn,index) =>{
+    //     btn.addEventListener("click" , () =>{
+    //         const userInput = prompt("Please enter the numbrer to set the width of the container")
+    //         const columnSize = parseInt(userInput)
+    //         console.log("the column size is : ",columnSize)
+
+    //         if(!isNaN(columnSize) && columnSize >= 1 && columnSize <= 12){
+    //             let newSize = `col-${columnSize}`;
+    //             dropAreas[index].classList = `${newSize} p-0 bg-primary droppable position-relative`
+    //         }else{
+    //             alert("You did not enter the number to set the width of the container")
+    //         }
+    //     })
+    // })
     
 });
 
