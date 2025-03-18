@@ -59,4 +59,28 @@ body {
     background-color: forestgreen;
 }
 
+/* css of edit icon */
 
+.edit-icon{
+    left: 10px;
+    top: 10px;
+    padding: 5px 15px;
+    border: none;
+}
+
+.edit-icon i {
+    color: white;
+}
+
+
+#dropZone {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#dropZone.drag-over {
+    background-color: #f0f0f0;
+    border-color: #333;
+}
